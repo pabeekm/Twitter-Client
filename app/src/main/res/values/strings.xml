@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Twitter Client</string>
+    <string name="login_label">Connect with Twitter</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="profile">View Profile</string>
+    <string name="writeTweet">Write Tweet</string>
+</resources>

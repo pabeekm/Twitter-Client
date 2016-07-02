@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivPic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:src="@drawable/ic_launcher"/>
+
+    <TextView
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tvBody"
+        android:layout_below="@+id/tvTime"
+        android:layout_alignLeft="@+id/tvTime"
+        android:layout_alignStart="@+id/tvTime" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvTime"
+        android:layout_alignTop="@+id/ivPic"
+        android:layout_toRightOf="@+id/ivPic"
+        android:layout_toEndOf="@+id/ivPic" />
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="225dp"
+        android:maxHeight="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivEmbedded"
+        android:layout_below="@+id/tvBody"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+    <ImageView
+        android:src="@drawable/exit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/exit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
